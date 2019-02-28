@@ -1,0 +1,31 @@
+.nav {
+
+  &__item {
+    padding: 1rem 1rem 1rem 2rem;
+    list-style-type: none;
+    background-color:  #f2af1f ;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color:  #e8d106 ;
+    }
+  }
+
+}
+
+.imgWrapper {
+
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+.paragraphText {
+
+}
+

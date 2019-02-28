@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #c9e7ef;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-size: 100%; // 1rem = 16px
+  min-height: 100vh;
+
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 0 0 0;
+  background-color: var(--color-grey-light-1);
+}
+
+
+.header {
+  height: 7rem;
+  background-color: #8cb0f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.footer {
+  height: 5rem;
+  background-color: #c4d0d3;
+}
+
+.content {
+  display: flex;
+}
+
+
+.sidebar {
+  // https://stackoverflow.com/questions/46954952/how-to-stretch-flex-child-to-fill-height-of-the-container
+  background-color: #f2af1f;
+  min-width: 15rem;
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: #4ec940;
+}
