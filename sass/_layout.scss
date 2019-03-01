@@ -7,9 +7,9 @@
 html {
 
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background-color: #c9e7ef;
+  background-color: $white;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -28,17 +28,20 @@ html {
 
 .header {
   height: 7rem;
-  background-color: #8cb0f8;
+  background-color: $blue-main;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: $white;
 
 
 }
 
 .footer {
   height: 5rem;
-  background-color: #c4d0d3;
+  background-color: $blue-main;
+  display: flex;
+  align-items: center;
 }
 
 .content {
@@ -48,7 +51,7 @@ html {
 
 .sidebar {
   // https://stackoverflow.com/questions/46954952/how-to-stretch-flex-child-to-fill-height-of-the-container
-  background-color: #f2af1f;
+  background-color: $green-main;
   min-width: 15rem;
   flex: 1 1 auto;
 
@@ -57,5 +60,5 @@ html {
 }
 
 .main {
-  background-color: #4ec940;
+  background-color: $yellow-main;
 }

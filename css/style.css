@@ -4,9 +4,9 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background-color: #c9e7ef;
+  background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 100%;
@@ -19,35 +19,42 @@ html {
 
 .header {
   height: 7rem;
-  background-color: #8cb0f8;
+  background-color: #05668D;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  color: #fff; }
 
 .footer {
   height: 5rem;
-  background-color: #c4d0d3; }
+  background-color: #05668D;
+  display: flex;
+  align-items: center; }
 
 .content {
   display: flex; }
 
 .sidebar {
-  background-color: #f2af1f;
+  background-color: #00A896;
   min-width: 15rem;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column; }
 
 .main {
-  background-color: #4ec940; }
+  background-color: #F0F3BD; }
 
 .nav__item {
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1.5rem 1rem 1.5rem 2rem;
   list-style-type: none;
-  background-color: #f2af1f;
-  cursor: pointer; }
+  background-color: #00A896;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff; }
   .nav__item:hover {
-    background-color: #e8d106; }
+    background-color: #02C39A; }
 
 .imgWrapper {
   display: flex; }
@@ -63,19 +70,23 @@ html {
 
 .pageHeader {
   background-color: #fff;
-  padding: 2rem; }
+  padding: 2rem;
+  border-bottom: solid 1px lightgrey; }
 
 .commentBox {
-  background-color: #dedffc;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   margin: 2rem;
   border-radius: 15px; }
   .commentBox__header {
     padding: 2rem;
-    background-color: #fff;
+    background-color: #028090;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px; }
+    border-top-right-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; }
   .commentBox__content {
     padding: 2rem; }
   .commentBox__footer {
@@ -84,7 +95,9 @@ html {
     display: flex;
     justify-content: space-between;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; }
+    border-bottom-right-radius: 15px;
+    border-top: solid 1px lightgrey;
+    font-weight: bold; }
 
 .testimonies {
   display: flex;
@@ -100,14 +113,25 @@ html {
     .testimonies .testimony__profile {
       display: flex;
       padding: 1rem 2rem;
-      background-color: blue;
+      background-color: #fff;
       flex: 1 0 auto;
       align-items: center; }
       .testimonies .testimony__profile__info {
         width: 100%;
-        background-color: aqua;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         margin-left: 2rem;
         justify-content: center;
         align-items: center; }
+        .testimonies .testimony__profile__info--rating {
+          font-weight: bold;
+          font-size: 2.5rem; }
+        .testimonies .testimony__profile__info--name {
+          margin-top: 5px;
+          font-style: italic; }
+        .testimonies .testimony__profile__info--date {
+          font-style: italic; }
+
+.copyright {
+  margin-left: 2rem; }

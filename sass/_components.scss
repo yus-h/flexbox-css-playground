@@ -1,14 +1,20 @@
 .nav {
 
   &__item {
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1.5rem 1rem 1.5rem 2rem;
     list-style-type: none;
-    background-color:  #f2af1f ;
+    background-color:  $green-main ;
     cursor: pointer;
 
 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+
+
     &:hover {
-      background-color:  #e8d106 ;
+      background-color:  $green-secondary ;
     }
   }
 
@@ -34,12 +40,14 @@
 }
 
 .pageHeader {
-  background-color: #fff;
+  background-color: $white;
   padding: 2rem;
+
+  border-bottom: solid 1px lightgrey;
 }
 
 .commentBox {
-  background-color: #dedffc;
+  background-color: $white;
 
   display: flex;
   flex-direction: column;
@@ -52,9 +60,14 @@
 
     //https://stackoverflow.com/questions/37785345/how-to-get-flexbox-to-include-padding-in-calculations/37785605
     padding: 2rem;
-    background-color: #fff;
+    background-color: $blue-secondary;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px
+    border-top-right-radius: 15px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $white;
+
   }
 
   &__content {
@@ -62,12 +75,21 @@
   }
 
   &__footer {
-    background-color: #fff;
+    background-color: $white;
     padding: 2rem;
     display:flex;
     justify-content: space-between;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px
+    border-bottom-right-radius: 15px;
+
+    border-top: solid 1px lightgrey;
+    font-weight: bold;
+
+    &__dateposted {
+
+    }
+
+
   }
 }
 
@@ -93,7 +115,7 @@
     &__profile {
       display: flex;
       padding: 1rem 2rem;
-      background-color: blue;
+      background-color: $white;
       flex : 1 0 auto;
       align-items: center;
 
@@ -104,15 +126,34 @@
 
       &__info {
         width: 100%;
-        background-color: aqua;
+        background-color: $white;
         display: flex;
         flex-direction: column;
         margin-left: 2rem;
         justify-content: center;
         align-items: center;
 
+
+          &--rating {
+            font-weight: bold;
+            font-size: 2.5rem;
+          }
+
+          &--name {
+            margin-top: 5px;
+            font-style: italic;
+          }
+
+          &--date {
+            font-style: italic;
+          }
+
       }
     }
 
   }
+}
+
+.copyright {
+  margin-left: 2rem;
 }
