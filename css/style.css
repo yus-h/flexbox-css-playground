@@ -54,3 +54,60 @@ html {
   .imgWrapper__photo {
     width: 100%;
     display: block; }
+
+.header__banner {
+  padding-left: 2rem; }
+
+.header__user {
+  padding-right: 2rem; }
+
+.pageHeader {
+  background-color: #fff;
+  padding: 2rem; }
+
+.commentBox {
+  background-color: #dedffc;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 15px; }
+  .commentBox__header {
+    padding: 2rem;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+  .commentBox__content {
+    padding: 2rem; }
+  .commentBox__footer {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+
+.testimonies {
+  display: flex;
+  justify-content: center; }
+  .testimonies .testimony {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 30%; }
+    .testimonies .testimony__text {
+      padding: 2rem; }
+    .testimonies .testimony__profile {
+      display: flex;
+      padding: 1rem 2rem;
+      background-color: blue;
+      flex: 1 0 auto;
+      align-items: center; }
+      .testimonies .testimony__profile__info {
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: center;
+        align-items: center; }

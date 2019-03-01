@@ -25,7 +25,94 @@
 
 }
 
-.paragraphText {
-
+.header__banner {
+  padding-left: 2rem;
 }
 
+.header__user {
+  padding-right: 2rem;
+}
+
+.pageHeader {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.commentBox {
+  background-color: #dedffc;
+
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+
+  // still need this even though border in footer defined
+  border-radius: 15px;
+
+  &__header {
+
+    //https://stackoverflow.com/questions/37785345/how-to-get-flexbox-to-include-padding-in-calculations/37785605
+    padding: 2rem;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__footer {
+    background-color: #fff;
+    padding: 2rem;
+    display:flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px
+  }
+}
+
+
+.testimonies {
+
+  display: flex;
+  justify-content: center;
+
+  .testimony {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 30%;
+
+
+    &__text {
+      padding: 2rem;
+
+    }
+
+    &__profile {
+      display: flex;
+      padding: 1rem 2rem;
+      background-color: blue;
+      flex : 1 0 auto;
+      align-items: center;
+
+      &__photo {
+
+
+      }
+
+      &__info {
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+
+  }
+}
